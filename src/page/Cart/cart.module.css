@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.container img {
+  width: 100px !important;
+}
+.cart_container {
+  padding: 20px;
+}
+.cart_container h2,
+.cart_container h3 {
+  padding: 10px;
+}
+.container div:not(.subtotal) {
+  height: auto;
+}
+.cart_product {
+  display: flex;
+  gap: 10px;
+}
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.btn {
+  border: none;
+  font-weight: bold;
+  padding: 5px 16px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.btn:hover svg {
+  background-color: #d49644;
+}
+.cart_container hr {
+  margin: 10px;
+}
+.subtotal {
+  padding: 20px;
+  min-width: 300px;
+  height: 80%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid rgb(193, 193, 193);
+  background-color: rgb(242, 241, 241);
+  border-radius: 5px;
+  align-items: center;
+}
+.subtotal a {
+  border: none;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  text-decoration: none;
+  background-color: #febd69;
+}
+.subtotal a:hover {
+  background-color: #d49644;
+}
+.subtotal > div,
+.subtotal span {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 968px) {
+  .container {
+    flex-direction: column;
+    order: 1;
+  }
+}
